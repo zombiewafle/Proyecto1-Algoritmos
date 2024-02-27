@@ -2,25 +2,26 @@ package com.example.Maquina;
 
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Maquina {
-    private List<Integer> fiboList;
+    private List<BigInteger> fiboList;
     private int n;
 
     public Maquina(int n) {
         this.n = n;
         this.fiboList = new ArrayList<>();
-        this.fiboList.add(0);
-        this.fiboList.add(1);
+        this.fiboList.add(BigInteger.ZERO); // Uso de BigInteger.ZERO para el primer valor
+        this.fiboList.add(BigInteger.ONE); // Uso de BigInteger.ONE para el segundo valor
         fibo(n);
     }
 
     private void fibo(int n) {
-        // Comenzar a calcular desde el tercer elemento si n es mayor que 1.
         for (int i = fiboList.size(); i <= n; i++) {
-            int nValue = fiboList.get(i - 1) + fiboList.get(i - 2);
+            // Usar el método add de BigInteger para sumar los dos últimos valores
+            BigInteger nValue = fiboList.get(i - 1).add(fiboList.get(i - 2));
             fiboList.add(nValue);
         }
     }
