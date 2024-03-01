@@ -70,7 +70,7 @@ def main():
 
     repetitions = 100000
 
-    for i in range(1, 1000, 100):
+    for i in range(1, 100, 100):
         entry = "1" * i + "0"
         input_lengths.append(len(entry))
 
