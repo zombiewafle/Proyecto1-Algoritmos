@@ -20,7 +20,7 @@ Puedes instalar Matplotlib y SciPy utilizando pip:
 
 ```bash
 pip install matplotlib scipy
-
+```
 ## Cómo Ejecutar
 
 1. Clona este repositorio en tu máquina local usando:
@@ -28,10 +28,16 @@ pip install matplotlib scipy
    git clone https://github.com/zombiewafle/Proyecto1-Algoritmos.git
 
 2. Navega al directorio del proyecto:
+   ```bash
    cd Proyecto1-Algoritmos/
 
-3. Ejecutar el programa:
-   python3 main.py machine.txt / python main.py machine.txt
+4. Ejecutar el programa:
+   ```bash
+   python3 main.py machine.txt
+   ```
+   o
+   ```bash
+   python main.py machine.txt
 
-4. Configurar parametros de ejecución:
+6. Configurar parametros de ejecución:
    Es posible modificar el número de repeticiones que se hara el loop principal del programa, cambiando el valor de la variable repeticiones, además de que tan larga será la muestra en el loop for i in range(1, 100, 10):
