@@ -35,7 +35,9 @@ pip install matplotlib scipy numpy
    ```bash
    python3 main.py machine.txt
    ```
+   
    o
+   
    ```bash
    python main.py machine.txt
 
