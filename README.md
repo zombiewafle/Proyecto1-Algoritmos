@@ -19,7 +19,7 @@ Para ejecutar este simulador, necesitarás:
 Puedes instalar Matplotlib y SciPy utilizando pip:
 
 ```bash
-pip install matplotlib scipy
+pip install matplotlib scipy numpy
 ```
 ## Cómo Ejecutar
 
